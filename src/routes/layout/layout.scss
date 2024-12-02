@@ -1,4 +1,4 @@
-@import "../../responsive.scss";
+@use "../../responsive.scss" as resp;
 
 .layout {
   height: 100vh;
@@ -10,17 +10,17 @@
   display: flex;
   flex-direction: column;
 
-  @include lg {
+  @include resp.lg {
     // background-color: rgb(247, 210, 196);
     max-width: 1280px;
   }
 
-  @include md {
+  @include resp.md {
     // background-color: rgb(186, 203, 234);
     max-width: 768px;
   }
 
-  @include sm {
+  @include resp.sm {
     // background-color: rgb(239, 200, 200);
     max-width: 640px;
   }

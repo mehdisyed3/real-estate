@@ -1,0 +1,23 @@
+@use '../../responsive.scss' as resp;
+
+.listPage{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  
+
+.listContainer{
+  flex:3;
+  background-color: blanchedalmond;
+}
+
+.wrapper{
+  padding-right: 50px;
+}
+
+.mapContainer{
+  flex:2;
+  background-color: burlywood;
+}
+
+}
