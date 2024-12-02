@@ -1,4 +1,29 @@
+@use './responsive.scss' as resp;
+
+
 .layout{
-  background-color: rebeccapurple;
+
   height: 100vh;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include resp.lg{
+    background-color: palegoldenrod;
+    max-width: 1288px;
+  }
+
+  @include resp.md{
+    background-color: rgb(222, 255, 171);
+    max-width: 768px;
+  }
+
+  @include resp.sm{
+    background-color: rgb(180, 179, 255);
+    max-width: 640px;
+  }
+
+
 }
